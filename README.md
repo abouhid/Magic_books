@@ -13,7 +13,7 @@ This React Project is mandatory for graduating in the Microverse Program.
 
 ## Built With
 
-- React / Gatsby
+- React / Gatsby;
 - Redux
 - Node.js
 - Typescript
