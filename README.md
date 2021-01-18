@@ -36,6 +36,11 @@ To get a local copy up and running follow these simple example steps.
 - Github: [@abouhid](https://github.com/abouhid)
 - LinkedIn: [Alexandre Bouhid](https://www.linkedin.com/in/alexandrebouhid/)
 
+👤 **Peter Robert Ndungu**
+
+- Github: [@peterrobert](https://github.com/peterrobert)
+- Linkedin: [peter robert Ndungu](https://www.linkedin.com/in/peter-rob-ndungu/)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
