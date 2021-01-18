@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-![visitors](https://visitor-badge.glitch.me/badge?page_id=abouhid/Jazzix)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=abouhid/Magic_books)
 
 # Magic Books Inc.
 
-This React Project is
+This React Project is mandatory for graduating in the Microverse Program.
 
 <!-- ![screenshot]() -->
 
@@ -13,7 +13,10 @@ This React Project is
 
 ## Built With
 
-- React / React-Bootstrap
+- React / Gatsby
+- Redux
+- Node.js
+- Typescript
 - Javascript
 - HTML / CSS
 
@@ -21,10 +24,10 @@ This React Project is
 
 To get a local copy up and running follow these simple example steps.
 
-- Git clone git@github.com:abouhid/Jazzix.git
+- Git clone git@github.com:abouhid/Magic_books.git
 - Move to the root directory in your command line
 - run `npm install`
-- run `npm start`
+- run `gatsby develop`
 
 ## Authors
 
