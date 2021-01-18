@@ -9,11 +9,11 @@ This React Project is mandatory for graduating in the Microverse Program.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://magicbookspeteralex.netlify.app/)
 
 ## Built With
 
-- React / Gatsby
+- React / Gatsby;
 - Redux
 - Node.js
 - Typescript
@@ -35,6 +35,11 @@ To get a local copy up and running follow these simple example steps.
 
 - Github: [@abouhid](https://github.com/abouhid)
 - LinkedIn: [Alexandre Bouhid](https://www.linkedin.com/in/alexandrebouhid/)
+
+👤 **Peter Robert Ndungu**
+
+- Github: [@peterrobert](https://github.com/peterrobert)
+- Linkedin: [peter robert Ndungu](https://www.linkedin.com/in/peter-rob-ndungu/)
 
 ## 🤝 Contributing
 
