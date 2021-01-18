@@ -9,7 +9,7 @@ This React Project is mandatory for graduating in the Microverse Program.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://magicbookspeteralex.netlify.app/)
 
 ## Built With
 
