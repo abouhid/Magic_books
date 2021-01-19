@@ -1,22 +1,20 @@
 import { func } from "prop-types"
-import { createBook, removeBook } from "../reducers"
-import { createStore } from "react-redux"
-function bookReducer(book = null, action) {
-  switch (action.type) {
-    case "CREATE_BOOK":
-      return { ...book, ...action.payload }
-    case "REMOVE_BOOK":
-      return "book removed"
-    default:
-      return book
-  }
-}
+import { createBook, removeBook } from "../actions"
+import { createStore } from "redux"
+import { bookReducer } from "../reducers"
 
-const store = redux.createStore(bookReducer)
+const store = createStore(bookReducer)
 
 store.subscribe(() => console.log(store.getState()))
 
-// The only way to mutate the internal state is to dispatch an action.
-// The actions can be serialized, logged or stored and later replayed.
-store.dispatch({ type: "CREATE_BOOK" })
-// {value: 1}
+store.dispatch(createBook())
+store.dispatch({
+  type: "CREATE_BOOK",
+  payload: {
+    id: 1,
+    title: "winds of winter",
+    category: "fantasy",
+  },
+})
+
+export default store

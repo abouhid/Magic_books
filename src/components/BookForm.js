@@ -10,15 +10,17 @@ const BookForm = () => {
     "Learning",
     "Sci-Fi",
   ]
-  const categoriesOpt = categories.map(cat => <option>{cat}</option>)
+  const categoriesOpt = categories.map((cat, index) => (
+    <option key={index}>{cat}</option>
+  ))
   return (
     <Form>
       <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Book Title</Form.Label>
         <Form.Control type="text" placeholder="Book Name" />
       </Form.Group>
       <Form.Group controlId="exampleForm.ControlSelect1">
-        <Form.Label>Example select</Form.Label>
+        <Form.Label>Category:</Form.Label>
         <Form.Control as="select">{categoriesOpt}</Form.Control>
       </Form.Group>
     </Form>
