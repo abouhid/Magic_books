@@ -1,10 +1,10 @@
-function createBook(book) {
+const createBook = book => {
   return {
     type: "CREATE_BOOK",
     payload: book,
   }
 }
-function removeBook(book) {
+const removeBook = book => {
   return {
     type: "REMOVE_BOOK",
     payload: book,

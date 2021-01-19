@@ -1,4 +1,8 @@
-function bookReducer(book = null, action) {
+import { combineReducers } from "redux"
+
+const reducer = (book = {}, action) => {
+  console.log(action)
+
   switch (action.type) {
     case "CREATE_BOOK":
       return { ...book, ...action.payload }
@@ -8,5 +12,7 @@ function bookReducer(book = null, action) {
       return book
   }
 }
-
-export default bookReducer()
+const bookReducer = combineReducers({
+  reducer,
+})
+export default bookReducer

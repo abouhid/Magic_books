@@ -1,7 +1,7 @@
 import { func } from "prop-types"
 import { createBook, removeBook } from "../actions"
 import { createStore } from "redux"
-import { bookReducer } from "../reducers"
+import bookReducer from "../reducers"
 
 const store = createStore(bookReducer)
 
