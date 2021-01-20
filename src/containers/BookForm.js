@@ -2,12 +2,21 @@ import React from "react"
 import Form from "react-bootstrap/Form"
 import { Button } from "react-bootstrap"
 import { useForm } from "react-hook-form"
-
+import store from "../reducers/books"
 const BookForm = () => {
   const { register, handleSubmit, watch, errors } = useForm()
   const onSubmit = data => {
-    console.log(data)
+    const newBook = {
+      id: Math.floor(Math.random() * 100),
+      title: data.bookTitle,
+      category: data.category,
+    }
+    store.dispatch({
+      type: "CREATE_BOOK",
+      payload: newBook,
+    })
     document.getElementById("bookinput").value = ""
+    document.getElementById("category").value = "Action"
   }
   const categories = [
     "Action",
@@ -33,7 +42,7 @@ const BookForm = () => {
         />
         {errors.bookTitle && <span>This field is required</span>}
       </Form.Group>
-      <Form.Group controlId="exampleForm.ControlSelect1">
+      <Form.Group controlId="category">
         <Form.Label>Category:</Form.Label>
         <Form.Control as="select" name="category" ref={register}>
           {categoriesOpt}
