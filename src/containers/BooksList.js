@@ -1,5 +1,5 @@
 import React from "react"
-import Book from "./Book"
+import Book from "../components/Book"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { bookObj } from "../pages"
 
