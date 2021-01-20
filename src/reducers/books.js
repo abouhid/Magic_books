@@ -12,8 +12,8 @@ store.dispatch({
   type: "CREATE_BOOK",
   payload: {
     id: 1,
-    title: "winds of winter",
-    category: "fantasy",
+    title: "This is a book",
+    category: "Action",
   },
 })
 
