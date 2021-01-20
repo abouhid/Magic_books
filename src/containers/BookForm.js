@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form"
 const BookForm = () => {
   const { register, handleSubmit, watch, errors } = useForm()
   const onSubmit = data => {
-    console.log(data)
     document.getElementById("bookinput").value = ""
   }
   const categories = [

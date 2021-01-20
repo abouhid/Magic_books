@@ -5,8 +5,6 @@ import bookReducer from "../reducers"
 
 const store = createStore(bookReducer)
 
-store.subscribe(() => console.log(store.getState()))
-
 store.dispatch(createBook())
 store.dispatch({
   type: "CREATE_BOOK",
