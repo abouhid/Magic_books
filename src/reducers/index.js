@@ -1,11 +1,11 @@
 import { combineReducers } from "redux"
 
-const reducer = (book = {}, action) => {
+const reducer = (book = [], action) => {
   switch (action.type) {
     case "CREATE_BOOK":
-      return { ...book, ...action.payload }
+      return [...book, ...action.payload]
     case "REMOVE_BOOK":
-      return "book removed"
+      return "book.filter((el, i) => action.payload[0].id != el[i].id)"
     default:
       return book
   }

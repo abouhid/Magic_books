@@ -3,21 +3,25 @@ import Form from "react-bootstrap/Form"
 import { Button } from "react-bootstrap"
 import { useForm } from "react-hook-form"
 import store from "../reducers/books"
+import { createBook, removeBook } from "../actions"
 const BookForm = () => {
   const { register, handleSubmit, watch, errors } = useForm()
+
   const onSubmit = data => {
-    const newBook = {
-      id: Math.floor(Math.random() * 100),
-      title: data.bookTitle,
-      category: data.category,
-    }
-    store.dispatch({
-      type: "CREATE_BOOK",
-      payload: newBook,
-    })
+    const newBook = [
+      {
+        id: Math.floor(Math.random() * 500),
+        title: data.bookTitle,
+        category: data.category,
+      },
+    ]
+
+    store.dispatch(createBook(newBook))
+
     document.getElementById("bookinput").value = ""
     document.getElementById("category").value = "Action"
   }
+
   const categories = [
     "Action",
     "Biography",
