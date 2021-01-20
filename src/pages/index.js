@@ -17,10 +17,13 @@ export const bookObj = [
 ]
 const IndexPage = () => {
   const [books, setBooks] = useState(bookObj)
+  store.dispatch({
+    type: "CREATE_BOOK",
+    payload: books,
+  })
   return (
     <div>
       <Provider store={store}>
-        {console.log(books)}
         <App />
       </Provider>
     </div>
