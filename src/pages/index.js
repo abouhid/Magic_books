@@ -20,7 +20,6 @@ const IndexPage = () => {
   return (
     <div>
       <Provider store={store}>
-        {console.log(books)}
         <App />
       </Provider>
     </div>
