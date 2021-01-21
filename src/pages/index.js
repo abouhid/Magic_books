@@ -1,22 +1,29 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+import App from "../components/App.js"
+import { Provider } from "react-redux"
+import store from "../reducers/books"
+export const bookObj = [
+  {
+    id: Math.floor(Math.random() * 100),
+    title: "winds of winter",
+    category: "fantasy",
+  },
+  {
+    id: Math.floor(Math.random() * 100),
+    title: "game of thrones",
+    category: "horror",
+  },
+]
+const IndexPage = () => {
+  const [books, setBooks] = useState(bookObj)
+  return (
+    <div>
+      <Provider store={store}>
+        <App />
+      </Provider>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+  )
+}
 
 export default IndexPage
