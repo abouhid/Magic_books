@@ -2,31 +2,31 @@ import React, { useState } from "react"
 import Form from "react-bootstrap/Form"
 import { Button } from "react-bootstrap"
 import { useForm } from "react-hook-form"
-import store from "../reducers/books"
 import { createBook } from "../actions"
+import { useDispatch } from "react-redux"
 
 const BookForm = () => {
   const { register, handleSubmit, watch, errors } = useForm()
 
   const [newTitle, setnewTitle] = useState("")
   const [newCategory, setnewCategory] = useState("")
+  const dispatch = useDispatch()
 
   const handleChange = e => {
     const { value } = e.target
     setnewTitle(value)
     setnewCategory(document.getElementById("category").value)
-    console.log(newTitle, newCategory)
   }
   const handleCategory = () => {
     setnewCategory(document.getElementById("category").value)
   }
-  const onSubmit = data => {
+  const onSubmit = () => {
     const newBook = {
       id: Math.floor(Math.random() * 500),
       title: newTitle,
       category: newCategory,
     }
-    store.dispatch(createBook(newBook))
+    dispatch(createBook(newBook))
     document.getElementById("bookinput").value = ""
     document.getElementById("category").value = "Action"
   }

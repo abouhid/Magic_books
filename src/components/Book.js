@@ -11,7 +11,6 @@ const Book = ({ book }) => {
       <li>
         Book ID: {book.id} - Book title: {book.title} - Book Category:{" "}
         {book.category}
-        {/* <Button onClick={() => console.log(book.id)}>Delete Book</Button> */}
         <Button onClick={() => dispatch(removeBook(book))}>Delete Book</Button>
       </li>
     </ul>
