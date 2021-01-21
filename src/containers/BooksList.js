@@ -4,12 +4,20 @@ import Book from "../components/Book"
 import "bootstrap/dist/css/bootstrap.min.css"
 import store from "../reducers/books"
 import { createBook, removeBook } from "../actions"
+import { useDispatch } from "react-redux"
 
 const BooksList = () => {
-  const allBooks = store.getState().reducer
-  const displayBooks = allBooks.map(book => {
+  const dispatch = useDispatch()
+  const handleRemoveBook = book => {
+    dispatch(removeBook(book))
+  }
 
-    return <Book key={book.id} book={book} />
+  const allBooks = store.getState().reducer
+
+  const displayBooks = allBooks.map(book => {
+    return (
+      <Book handleRemoveBook={handleRemoveBook} key={book.id} book={book} />
+    )
   })
 
   return <div>{displayBooks}</div>
@@ -18,4 +26,3 @@ const BooksList = () => {
 export default connect(state => ({ state }), { createBook, removeBook })(
   BooksList
 )
-
