@@ -3,13 +3,18 @@ import { connect } from "react-redux"
 import Book from "../components/Book"
 import "bootstrap/dist/css/bootstrap.min.css"
 import store from "../reducers/books"
-import { createBook, removeBook } from "../actions"
+import { createBook, removeBook, changeFilter } from "../actions"
 import { useDispatch } from "react-redux"
+import CategoryFilter from "../components/CategoryFilter"
 
 const BooksList = () => {
   const dispatch = useDispatch()
   const handleRemoveBook = book => {
     dispatch(removeBook(book))
+  }
+  const handleFilterChange = e => {
+    const { value } = e.target
+    dispatch(changeFilter(value))
   }
 
   const allBooks = store.getState().reducer
@@ -20,7 +25,12 @@ const BooksList = () => {
     )
   })
 
-  return <div>{displayBooks}</div>
+  return (
+    <>
+      <CategoryFilter handleFilterChange={handleFilterChange} />
+      <div>{displayBooks}</div>
+    </>
+  )
 }
 
 export default connect(state => ({ state }), { createBook, removeBook })(
