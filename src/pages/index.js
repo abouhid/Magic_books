@@ -1,22 +1,26 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import App from "../components/App.js"
 import { Provider } from "react-redux"
 import store from "../reducers/books"
+import { createBook, removeBook } from "../actions"
 export const bookObj = [
   {
-    id: Math.floor(Math.random() * 100),
-    title: "winds of winter",
-    category: "fantasy",
+    id: Math.floor(Math.random() * 500),
+    title: "The Winds of winter",
+    category: "Sci-Fi",
   },
   {
-    id: Math.floor(Math.random() * 100),
-    title: "game of thrones",
-    category: "horror",
+    id: Math.floor(Math.random() * 500),
+    title: "Dr. Sleep",
+    category: "Horror",
   },
 ]
 const IndexPage = () => {
   const [books, setBooks] = useState(bookObj)
+
+  store.dispatch(createBook(books[0]))
+  store.dispatch(createBook(books[1]))
+
   return (
     <div>
       <Provider store={store}>
