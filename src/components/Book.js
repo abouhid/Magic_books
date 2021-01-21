@@ -3,7 +3,7 @@ const Book = ({ book }) => {
   return (
     <ul>
       <li>
-        Book ID:{book.id} - Book title:{book.title} - Book category:
+        Book ID: {book.id} - Book title:{book.title} - Book category:{" "}
         {book.category}
       </li>
     </ul>
