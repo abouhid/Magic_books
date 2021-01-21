@@ -8,6 +8,7 @@ import { createBook, removeBook } from "../actions"
 const BooksList = () => {
   const allBooks = store.getState().reducer
   const displayBooks = allBooks.map(book => {
+
     return <Book key={book.id} book={book} />
   })
 
@@ -17,3 +18,4 @@ const BooksList = () => {
 export default connect(state => ({ state }), { createBook, removeBook })(
   BooksList
 )
+

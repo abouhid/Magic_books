@@ -31,6 +31,7 @@ const BookForm = () => {
     document.getElementById("category").value = "Action"
   }
 
+
   const categories = [
     "Action",
     "Biography",
@@ -52,6 +53,7 @@ const BookForm = () => {
           name="bookTitle"
           placeholder="Book Title"
           onChange={handleChange}
+
           ref={register({ required: true })}
         />
         {errors.bookTitle && <span>This field is required</span>}
@@ -64,6 +66,7 @@ const BookForm = () => {
           onChange={handleCategory}
           ref={register}
         >
+
           {categoriesOpt}
         </Form.Control>
       </Form.Group>
