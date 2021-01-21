@@ -6,12 +6,12 @@ import { createBook, removeBook } from "../actions"
 export const bookObj = [
   {
     id: Math.floor(Math.random() * 500),
-    title: "winds of winter",
+    title: "The Winds of winter",
     category: "Sci-Fi",
   },
   {
     id: Math.floor(Math.random() * 500),
-    title: "game of thrones",
+    title: "Dr. Sleep",
     category: "Horror",
   },
 ]
