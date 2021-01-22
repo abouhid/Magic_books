@@ -7,22 +7,29 @@ import { createBook, removeBook, changeFilter } from "../actions"
 import { useDispatch } from "react-redux"
 import CategoryFilter from "../components/CategoryFilter"
 
-const BooksList = () => {
+const BooksList = ({ removeBook, changeFilter }) => {
   const dispatch = useDispatch()
+
+  let filteredBooks = store.getState().filterReducer
+
   const handleRemoveBook = book => {
     dispatch(removeBook(book))
   }
   const handleFilterChange = e => {
     const { value } = e.target
-    dispatch(changeFilter(value))
+    filteredBooks = dispatch(changeFilter(value)).payload
   }
 
   const allBooks = store.getState().bookReducer
-  const displayBooks = allBooks.map(book => {
-    return (
-      <Book handleRemoveBook={handleRemoveBook} key={book.id} book={book} />
+  const displayBooks = allBooks
+    .filter(book =>
+      filteredBooks === "All" ? true : book.category === filteredBooks
     )
-  })
+    .map(book => {
+      return (
+        <Book handleRemoveBook={handleRemoveBook} key={book.id} book={book} />
+      )
+    })
 
   return (
     <>
@@ -31,7 +38,8 @@ const BooksList = () => {
     </>
   )
 }
-
-export default connect(state => ({ state }), { createBook, removeBook })(
-  BooksList
-)
+export default connect(state => ({ state }), {
+  createBook,
+  removeBook,
+  changeFilter,
+})(BooksList)

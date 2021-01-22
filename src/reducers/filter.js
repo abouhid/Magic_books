@@ -1,17 +1,10 @@
-// import { createStore } from "redux"
-// import reducers from "../reducers"
-
-// const store = createStore(reducers)
-
-// export default store
-
-const filterReducer = (book = [], action) => {
+const filterReducer = (state = "All", action) => {
   switch (action.type) {
     case "CHANGE_FILTER":
       return action.payload
 
     default:
-      return "All"
+      return state
   }
 }
 export default filterReducer
