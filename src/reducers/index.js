@@ -1,17 +1,12 @@
 import { combineReducers } from "redux"
+import { createStore } from "redux"
+import bookReducer from "./books"
+import filterReducer from "./filter"
 
-const reducer = (book = [], action) => {
-  switch (action.type) {
-    case "CREATE_BOOK":
-      return [...book, action.payload]
-    case "REMOVE_BOOK":
-      return book.filter((el, i) => action.payload.id != el.id)
-
-    default:
-      return book
-  }
-}
-const bookReducer = combineReducers({
-  reducer,
+const reducers = combineReducers({
+  bookReducer,
+  filterReducer,
 })
-export default bookReducer
+
+const store = createStore(reducers)
+export default store

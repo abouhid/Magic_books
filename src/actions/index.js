@@ -10,5 +10,11 @@ const removeBook = book => {
     payload: book,
   }
 }
+const changeFilter = category => {
+  return {
+    type: "CHANGE_FILTER",
+    payload: category,
+  }
+}
 
-export { createBook, removeBook }
+export { createBook, removeBook, changeFilter }
