@@ -2,7 +2,7 @@ import React from "react"
 import { connect } from "react-redux"
 import Book from "../components/Book"
 import "bootstrap/dist/css/bootstrap.min.css"
-import store from "../reducers/books"
+import store from "../reducers"
 import { createBook, removeBook, changeFilter } from "../actions"
 import { useDispatch } from "react-redux"
 import CategoryFilter from "../components/CategoryFilter"
@@ -17,8 +17,7 @@ const BooksList = () => {
     dispatch(changeFilter(value))
   }
 
-  const allBooks = store.getState().reducer
-
+  const allBooks = store.getState().bookReducer
   const displayBooks = allBooks.map(book => {
     return (
       <Book handleRemoveBook={handleRemoveBook} key={book.id} book={book} />

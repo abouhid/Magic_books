@@ -15,7 +15,11 @@ const CategoryFilter = ({ handleFilterChange }) => {
     <option key={index}>{cat}</option>
   ))
 
-  return <select onChange={handleFilterChange}>{categoriesOpt}</select>
+  return (
+    <select className="select" onChange={handleFilterChange}>
+      {categoriesOpt}
+    </select>
+  )
 }
 
 export default CategoryFilter

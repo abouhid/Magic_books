@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import App from "../components/App.js"
 import { Provider } from "react-redux"
-import store from "../reducers/books"
-import { createBook, removeBook } from "../actions"
+import store from "../reducers"
+import { createBook } from "../actions"
 export const bookObj = [
   {
     id: Math.floor(Math.random() * 500),
