@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -685,7 +686,7 @@ pre tt:after {
   color: #121212;
 }
 
-title {
+.title {
   width: 197px;
   height: 29px;
   margin: 3px 323px 0 0;
@@ -712,3 +713,135 @@ title {
   letter-spacing: normal;
   color: #4386bf;
 }
+
+.Comments {
+  width: 73px;
+  height: 19px;
+  margin: 3px 15px 2px 0;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Remove {
+  width: 54px;
+  height: 19px;
+  margin: 3px 15px 2px 0;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Edit {
+  width: 27px;
+  height: 19px;
+  margin: 3px 298px 2px 17px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Oval-2 {
+  width: 68px;
+  height: 68px;
+  border-style: solid;
+  border-width: 5px;
+  border-image-source: linear-gradient(to bottom, var(--medium-blue), var(--dodger-blue));
+  border-image-slice: 1;
+}
+
+.Rectangle-3 {
+  width: 90px;
+  height: 89.9px;
+  padding: 9.9px 10px 12px 12px;
+}
+
+.-Percent-Complete {
+  width: 68px;
+  height: 39px;
+  margin: 1px 92px 0 11px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+.Completed {
+  width: 80px;
+  height: 18px;
+  margin: 7px 79px 12px 12px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Line-2 {
+  width: 2px;
+  height: 70px;
+  margin: 18px 59px 0 79px;
+  border: solid 1px #e8e8e8;
+}
+
+.Current-Chapter {
+  width: 126px;
+  height: 18px;
+  margin: 1px 58px 0 59px;
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Current-Lesson {
+  width: 75px;
+  height: 21px;
+  margin: 7px 109px 4px 59px;
+  font-family: RobotoSlab;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Rectangle-2 {
+  width: 184px;
+  height: 33px;
+  margin: 12px 0 9px 59px;
+  padding: 7px 19px 8px 22px;
+  border-radius: 3px;
+  background-color: var(--azure);
+}
+
+
