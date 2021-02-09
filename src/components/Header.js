@@ -14,7 +14,7 @@ const Header = () => {
           CATEGORIES
       </div>
       <div className="Oval">
-      <i class="fas fa-user"></i> 
+      <i className="fas fa-user"></i> 
       </div>
     </div>
   )

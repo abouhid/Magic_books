@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -600,10 +600,9 @@ pre tt:after {
   }
 }
 
-
 /* our styles */
 
-.panel-bg{
+.panel-bg {
   height: 95px;
   margin: 0 0 38px;
   padding: 23px 99px 27px 100px;
@@ -663,12 +662,14 @@ pre tt:after {
   border: solid 1px #e8e8e8;
 }
 .Lesson-Panel {
-  /* height: 170px; */
+  height: 170px;
   margin: 37px 100px 0;
   padding: 32px 147px 26px 27px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
 }
 
 .School-of {
@@ -761,7 +762,11 @@ pre tt:after {
   height: 68px;
   border-style: solid;
   border-width: 5px;
-  border-image-source: linear-gradient(to bottom, var(--medium-blue), var(--dodger-blue));
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--medium-blue),
+    var(--dodger-blue)
+  );
   border-image-slice: 1;
 }
 
@@ -836,12 +841,19 @@ pre tt:after {
 }
 
 .Rectangle-2 {
-  width: 184px;
-  height: 33px;
   margin: 12px 0 9px 59px;
   padding: 7px 19px 8px 22px;
   border-radius: 3px;
-  background-color: var(--azure);
 }
 
+.book_details{
+  flex: 1;
+}
 
+.book_completed{
+  flex: 1;
+}
+
+.book_remove{
+  flex: 1;
+}
