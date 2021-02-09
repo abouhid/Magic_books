@@ -31,7 +31,6 @@ const BookForm = () => {
     document.getElementById("category").value = "Action"
   }
 
-
   const categories = [
     "Action",
     "Biography",
@@ -46,37 +45,38 @@ const BookForm = () => {
   ))
   return (
     <>
-    <div className='container-fluid'>
-    <h1 className= "Title_two">ADD NEW BOOK</h1>
-    <Form onSubmit={handleSubmit(onSubmit)}>
-      <Form.Group controlId="bookinput">
-        <input
-          type="text"
-          name="bookTitle"
-          placeholder="Book Title"
-          onChange={handleChange}
-          className="input_field"
-          ref={register({ required: true })}
-        />
-        {errors.bookTitle && <span>This field is required</span>}
-      </Form.Group>
-      <Form.Group controlId="category">
-        <select
-          name="category"
-          onChange={handleCategory}
-          ref={register}
-          className="category_field"
-         
-        >
-
-          {categoriesOpt}
-        </select>
-      </Form.Group>
-      <Button variant="primary" type="submit" className='submit_form'>
-       Add Book
-      </Button>
-    </Form>
-    </div>
+      <div className="container">
+        <div className="row">
+          <h1 className="Title_two">ADD NEW BOOK</h1>
+          <Form onSubmit={handleSubmit(onSubmit)}>
+            <Form.Group controlId="bookinput">
+                <input
+                  type="text"
+                  name="bookTitle"
+                  placeholder="Book Title"
+                  onChange={handleChange}
+                  className="input_field"
+                  ref={register({ required: true })}
+                />
+              {errors.bookTitle && <span>This field is required</span>}
+            </Form.Group>
+            <Form.Group controlId="category">
+            
+                <select
+                  name="category"
+                  onChange={handleCategory}
+                  ref={register}
+                  className="category_field"
+                >
+                  {categoriesOpt}
+                </select>
+            </Form.Group>
+            <Button variant="primary" type="submit" className="submit_form">
+              Add Book
+            </Button>
+          </Form>
+        </div>
+      </div>
     </>
   )
 }
