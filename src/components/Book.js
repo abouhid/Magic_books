@@ -20,7 +20,7 @@ const Book = ({ book, handleRemoveBook }) => {
       <h5 className = 'Current-Chapter'>current chapter</h5>
       <h4 className='Current-Lesson'>chapter 17</h4>
 
-      <Button className='Rectangle-2' onClick={() => handleRemoveBook(book)}>Remove Book</Button>
+      <Button className='Rectangle-2 btn-primary btn-sm' onClick={() => handleRemoveBook(book)}>Remove Book</Button>
     </div>
   )
 }
