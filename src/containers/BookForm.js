@@ -45,35 +45,39 @@ const BookForm = () => {
     <option key={index}>{cat}</option>
   ))
   return (
+    <>
+    <div className='container-fluid'>
+    <h1 className= "Title_two">ADD NEW BOOK</h1>
     <Form onSubmit={handleSubmit(onSubmit)}>
       <Form.Group controlId="bookinput">
-        <Form.Label>Book Title</Form.Label>
-        <Form.Control
+        <input
           type="text"
           name="bookTitle"
           placeholder="Book Title"
           onChange={handleChange}
-
+          className="input_field"
           ref={register({ required: true })}
         />
         {errors.bookTitle && <span>This field is required</span>}
       </Form.Group>
       <Form.Group controlId="category">
-        <Form.Label>Category:</Form.Label>
-        <Form.Control
-          as="select"
+        <select
           name="category"
           onChange={handleCategory}
           ref={register}
+          className="category_field"
+         
         >
 
           {categoriesOpt}
-        </Form.Control>
+        </select>
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
+      <Button variant="primary" type="submit" className='submit_form'>
+       Add Book
       </Button>
     </Form>
+    </div>
+    </>
   )
 }
 
