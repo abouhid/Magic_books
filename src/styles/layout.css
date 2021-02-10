@@ -787,9 +787,6 @@ pre tt:after {
 }
 
 .Current-Chapter {
-  width: 126px;
-  height: 18px;
-  margin: 1px 58px 0 59px;
   opacity: 0.5;
   font-family: RobotoSlab;
   font-size: 13px;
@@ -799,12 +796,10 @@ pre tt:after {
   line-height: normal;
   letter-spacing: normal;
   color: #121212;
+  margin-bottom: 10px;
 }
 
 .Current-Lesson {
-  width: 75px;
-  height: 21px;
-  margin: 7px 109px 4px 59px;
   font-family: RobotoSlab;
   font-size: 16px;
   font-weight: 300;
@@ -816,9 +811,10 @@ pre tt:after {
 }
 
 .Rectangle-2 {
-  margin: 12px 0 9px 59px;
-  padding: 7px 19px 8px 22px;
+  width: 184px;
   border-radius: 3px;
+  text-align: center;
+  background-color: #0069d9;
 }
 
 .book_details {
@@ -833,7 +829,11 @@ pre tt:after {
 }
 
 .book_remove {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0px 50px;
 }
 
 .Line {

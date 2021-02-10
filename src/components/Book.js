@@ -24,11 +24,9 @@ const Book = ({ book, handleRemoveBook }) => {
 
         <div className="book_remove">
           <h5 className="Current-Chapter">Current Chapter</h5>
-          <h4 className="Current-Lesson">chapter 17</h4>
+          <h4 className="Current-Lesson">Chapter 17</h4>
 
-          <Button className="Rectangle-2 btn-primary btn-sm">
-            Update Book
-          </Button>
+          <Button className="Rectangle-2">Update Progress</Button>
         </div>
       </div>
     </div>
