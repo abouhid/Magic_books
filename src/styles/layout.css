@@ -635,7 +635,7 @@ pre tt:after {
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
 }
 
@@ -674,9 +674,6 @@ pre tt:after {
 }
 
 .School-of {
-  width: 49px;
-  height: 18px;
-  margin: 0 39px 0 0;
   opacity: 0.5;
   font-family: Montserrat;
   font-size: 14px;
@@ -686,6 +683,7 @@ pre tt:after {
   line-height: normal;
   letter-spacing: normal;
   color: #121212;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -697,7 +695,6 @@ pre tt:after {
   line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
-  margin: 0;
 }
 
 .Suzanne-Collins {
@@ -709,7 +706,7 @@ pre tt:after {
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
-  margin: 0;
+  margin: 5px 0 15px 0;
 }
 
 .Comments {
@@ -758,16 +755,8 @@ pre tt:after {
   border-image-slice: 1;
 }
 
-.Rectangle-3 {
-  width: 90px;
-  height: 89.9px;
-  padding: 9.9px 10px 12px 12px;
-}
-
 .-Percent-Complete {
-  width: 68px;
-  height: 39px;
-  margin: 1px 92px 0 11px;
+  margin: 0;
   font-family: Montserrat;
   font-size: 32px;
   font-weight: normal;
@@ -778,9 +767,6 @@ pre tt:after {
   color: #121212;
 }
 .Completed {
-  width: 80px;
-  height: 18px;
-  margin: 7px 79px 12px 12px;
   opacity: 0.5;
   font-family: Montserrat;
   font-size: 14px;
@@ -795,8 +781,9 @@ pre tt:after {
 .Line-2 {
   width: 2px;
   height: 70px;
-  margin: 18px 59px 0 79px;
+  margin: 0px 29px 0 29px;
   border: solid 1px #e8e8e8;
+  align-self: center;
 }
 
 .Current-Chapter {
@@ -842,7 +829,7 @@ pre tt:after {
 }
 
 .book_completed {
-  flex: 1;
+  display: flex;
 }
 
 .book_remove {
