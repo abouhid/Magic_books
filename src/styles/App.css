@@ -156,3 +156,291 @@
   flex-wrap: wrap;
   margin: auto;
 }
+
+/* our styles */
+.BOOKS {
+  width: 59px;
+  height: 16px;
+  margin: 0 41px 0 0;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+.CATEGORIES {
+  margin: 0;
+
+  width: 105px;
+  height: 16px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.Lesson-Panel {
+  width: 80%;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+
+.book_details > span {
+  cursor: pointer;
+}
+
+.panel-bg {
+  width: 1400px;
+  height: 95px;
+  margin: 0 0 38px;
+  padding: 23px 99px 27px 100px;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.Bookstore-CMS {
+  width: 1600px;
+  height: 1434px;
+  padding: 149px 60px 123px 100px;
+  background-color: var(--pale-grey);
+}
+
+.Bookstore-CMS2 {
+  width: 240px;
+  height: 37px;
+  margin: 6px 47px 2px 0;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.School-of {
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: RobotoSlab;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+  margin: 0;
+}
+
+.Suzanne-Collins {
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  margin: 5px 0 15px 0;
+}
+
+.Comments {
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Remove {
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Edit {
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Oval-2 {
+  width: 68px;
+  height: 68px;
+  border-style: solid;
+  border-width: 5px;
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--medium-blue),
+    var(--dodger-blue)
+  );
+  border-image-slice: 1;
+}
+
+.-textPercent {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+.Completed {
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Line-2 {
+  width: 2px;
+  height: 70px;
+  margin: 0px 29px 0 29px;
+  border: solid 1px #e8e8e8;
+  align-self: center;
+  background-color: #e8e8e8;
+}
+
+.Current-Chapter {
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+  margin-bottom: 10px;
+}
+
+.Current-Lesson {
+  font-family: RobotoSlab;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Rectangle-2 {
+  width: 184px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #0069d9;
+}
+
+.book_details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3%;
+}
+
+.book_completed {
+  display: flex;
+}
+
+.book_remove {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0px 50px;
+}
+
+.Line {
+  width: 80%;
+  height: 2px;
+  margin: 20px auto;
+  border: solid 1px #e8e8e8;
+}
+
+.Title_two {
+  width: 174px;
+  height: 24px;
+  margin: 29px 524px 19px 0;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888888;
+}
+
+form {
+  display: flex;
+}
+
+.input_field {
+  height: 45px;
+  width: 430px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+}
+
+.category_field {
+  width: 200px;
+  height: 45px;
+  margin: 0 34px 0;
+  padding: 6px 15px 9px 16px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+}
+
+.submit_form {
+  width: 150px;
+  height: 45px;
+  margin: 0 0 0 15px;
+  border-radius: 3px;
+}
