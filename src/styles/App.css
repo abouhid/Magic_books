@@ -1,0 +1,52 @@
+.App {
+  width: 85%;
+  margin: 10vh auto;
+  text-align: center;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.panel {
+  height: 95px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  margin: 0;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+  margin: 0 47px 0 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.profile-icon {
+  font-size: 45px;
+  color: #0290ff;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  padding: 9px;
+}

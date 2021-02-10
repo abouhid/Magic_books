@@ -22,11 +22,11 @@ const IndexPage = () => {
   store.dispatch(createBook(books[1]))
 
   return (
-    <div>
+    <>
       <Provider store={store}>
         <App />
       </Provider>
-    </div>
+    </>
   )
 }
 

@@ -34,7 +34,7 @@ const BooksList = ({ removeBook, changeFilter }) => {
   return (
     <>
       <CategoryFilter handleFilterChange={handleFilterChange} />
-      <div>{displayBooks}</div>
+      <>{displayBooks}</>
     </>
   )
 }

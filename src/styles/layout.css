@@ -601,17 +601,59 @@ pre tt:after {
 }
 
 /* our styles */
+.BOOKS {
+  width: 59px;
+  height: 16px;
+  margin: 0 41px 0 0;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+.CATEGORIES {
+  margin: 0;
 
+  width: 105px;
+  height: 16px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+.Oval {
+  width: 45px;
+  height: 45px;
+  margin: 0 0 0 664px;
+  padding: 14px;
+  border: solid 1px #e8e8e8;
+}
+/* 
 .panel-bg {
+  width: 1400px;
   height: 95px;
   margin: 0 0 38px;
   padding: 23px 99px 27px 100px;
   background-color: #ffffff;
   display: flex;
-  justify-content: space-around;
 }
 
 .Bookstore-CMS {
+  width: 1600px;
+  height: 1434px;
+  padding: 149px 60px 123px 100px;
+  background-color: var(--pale-grey);
+}
+
+.Bookstore-CMS2 {
   width: 240px;
   height: 37px;
   margin: 6px 47px 2px 0;
@@ -625,43 +667,13 @@ pre tt:after {
   color: var(--azure);
 }
 
-.BOOKS {
-  width: 59px;
-  height: 16px;
-  margin: 18px 41px 11px 0;
-  font-family: Montserrat;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.9px;
-  color: #121212;
-}
 
-.CATEGORIES {
-  width: 105px;
-  height: 16px;
-  margin: 18px 664px 11px 41px;
-  opacity: 0.5;
-  font-family: Montserrat;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.9px;
-  color: #121212;
-}
 
-.Oval {
-  width: 45px;
-  height: 45px;
-  margin: 0 0 0 664px;
-  padding: 14px;
-  border: solid 1px #e8e8e8;
-}
+
+
 .Lesson-Panel {
+  width: 1200px;
+
   height: 170px;
   margin: 37px 100px 0;
   padding: 32px 147px 26px 27px;
@@ -846,15 +858,15 @@ pre tt:after {
   border-radius: 3px;
 }
 
-.book_details{
+.book_details {
   flex: 1;
 }
 
-.book_completed{
+.book_completed {
   flex: 1;
 }
 
-.book_remove{
+.book_remove {
   flex: 1;
 }
 
@@ -865,7 +877,7 @@ pre tt:after {
   border: solid 1px #e8e8e8;
 }
 
-.Title_two{
+.Title_two {
   width: 174px;
   height: 24px;
   margin: 29px 524px 19px 0;
@@ -879,7 +891,7 @@ pre tt:after {
   color: #888888;
 }
 
-form{
+form {
   display: flex;
 }
 
@@ -893,7 +905,7 @@ form{
   background-color: #ffffff;
 }
 
-.category_field{
+.category_field {
   width: 285px;
   height: 45px;
   margin: 19px 34px 0;
@@ -903,9 +915,9 @@ form{
   background-color: #ffffff;
 }
 
-.submit_form{
+.submit_form {
   width: 184px;
   height: 45px;
   margin: 19px 0 0 34px;
   border-radius: 3px;
-}
+} */
