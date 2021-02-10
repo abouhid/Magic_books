@@ -117,7 +117,8 @@
   font-size: 30px;
   margin: 0;
 }
-.chart {
+
+.circular-chart {
   display: block;
   margin: 10px auto;
   width: 60px;

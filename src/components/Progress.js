@@ -3,7 +3,7 @@ import React from "react"
 const Progress = () => (
   <div className="status">
     <div>
-      <svg className="chart" viewBox="0 0 36 36">
+      <svg className="circular-chart" viewBox="0 0 36 36">
         <path
           x="50%"
           y="50%"
