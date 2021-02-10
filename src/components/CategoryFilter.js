@@ -16,7 +16,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
   ))
 
   return (
-    <div className="category-filter">
+    <div className="categoryFilter">
       <span className="filter-label">Filter by category:</span>{" "}
       <select className="select" onChange={handleFilterChange}>
         {categoriesOpt}

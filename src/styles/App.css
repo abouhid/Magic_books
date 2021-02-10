@@ -36,14 +36,14 @@
   align-items: center;
 }
 
-.panel-icon {
+.panelIcon {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex: 1;
 }
 
-.profile-icon {
+.profileIcon {
   font-size: 45px;
   color: #0290ff;
   border-radius: 50%;
@@ -51,7 +51,7 @@
   padding: 9px;
 }
 
-.category-filter {
+.categoryFilter {
   margin: 20px auto;
 }
 
@@ -112,12 +112,12 @@
   text-align: left;
 }
 
-.percent-complete {
+.textPercent {
   height: 39px;
   font-size: 30px;
   margin: 0;
 }
-.circular-chart {
+.chart {
   display: block;
   margin: 10px auto;
   width: 60px;
@@ -132,7 +132,7 @@
   animation: progress 1s ease-out forwards;
 }
 
-.circle-shadow {
+.circle {
   stroke: #ddd;
   fill: none;
   stroke-width: 2.8;

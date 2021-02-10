@@ -756,7 +756,7 @@ pre tt:after {
   border-image-slice: 1;
 }
 
-.-Percent-Complete {
+.-textPercent {
   margin: 0;
   font-family: Montserrat;
   font-size: 32px;

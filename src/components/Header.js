@@ -10,8 +10,8 @@ const Header = () => {
       <h4 className="BOOKS">Books</h4>
       <h4 className="CATEGORIES">Categories</h4>
 
-      <div className="panel-icon">
-        <FontAwesomeIcon icon={faUser} className="profile-icon" />
+      <div className="panelIcon">
+        <FontAwesomeIcon icon={faUser} className="profileIcon" />
       </div>
     </div>
   )

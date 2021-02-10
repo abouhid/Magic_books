@@ -3,11 +3,11 @@ import React from "react"
 const Progress = () => (
   <div className="status">
     <div>
-      <svg className="circular-chart" viewBox="0 0 36 36">
+      <svg className="chart" viewBox="0 0 36 36">
         <path
           x="50%"
           y="50%"
-          className="circle-shadow"
+          className="circle"
           stroke="100"
           d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
@@ -26,7 +26,7 @@ const Progress = () => (
       </svg>
     </div>
     <div className="progress-status">
-      <p className="percent-complete">80%</p>
+      <p className="textPercent">80%</p>
       <span className="completed">completed</span>
     </div>
   </div>
