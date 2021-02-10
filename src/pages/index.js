@@ -8,11 +8,13 @@ export const bookObj = [
     id: Math.floor(Math.random() * 500),
     title: "The Winds of winter",
     category: "Sci-Fi",
+    author: "George R. R. Martin",
   },
   {
     id: Math.floor(Math.random() * 500),
     title: "Dr. Sleep",
     category: "Horror",
+    author: "Stephen King",
   },
 ]
 const IndexPage = () => {

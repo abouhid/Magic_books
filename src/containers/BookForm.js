@@ -12,6 +12,14 @@ const BookForm = () => {
   const [newCategory, setnewCategory] = useState("")
   const dispatch = useDispatch()
 
+  const authors = [
+    "George R. R. Martin",
+    "J. K. Rowling",
+    "J. R. R. Tolkien",
+    "Stephen King",
+    "Patrick Rothfuss",
+  ]
+
   const handleChange = e => {
     const { value } = e.target
     setnewTitle(value)
@@ -25,6 +33,7 @@ const BookForm = () => {
       id: Math.floor(Math.random() * 500),
       title: newTitle,
       category: newCategory,
+      author: authors[Math.floor(Math.random() * authors.length)],
     }
     dispatch(createBook(newBook))
     document.getElementById("bookinput").value = ""
@@ -49,27 +58,28 @@ const BookForm = () => {
         <div className="row">
           <h1 className="Title_two">ADD NEW BOOK</h1>
           <Form onSubmit={handleSubmit(onSubmit)}>
-            <Form.Group controlId="bookinput">
-                <input
-                  type="text"
-                  name="bookTitle"
-                  placeholder="Book Title"
-                  onChange={handleChange}
-                  className="input_field"
-                  ref={register({ required: true })}
-                />
+            <Form.Group>
+              <input
+                type="text"
+                name="bookTitle"
+                placeholder="Book Title"
+                onChange={handleChange}
+                className="input_field"
+                id="bookinput"
+                ref={register({ required: true })}
+              />
               {errors.bookTitle && <span>This field is required</span>}
             </Form.Group>
-            <Form.Group controlId="category">
-            
-                <select
-                  name="category"
-                  onChange={handleCategory}
-                  ref={register}
-                  className="category_field"
-                >
-                  {categoriesOpt}
-                </select>
+            <Form.Group>
+              <select
+                name="category"
+                onChange={handleCategory}
+                ref={register}
+                id="category"
+                className="category_field"
+              >
+                {categoriesOpt}
+              </select>
             </Form.Group>
             <Button variant="primary" type="submit" className="submit_form">
               Add Book

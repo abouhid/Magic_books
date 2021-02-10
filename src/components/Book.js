@@ -7,9 +7,11 @@ const Book = ({ book, handleRemoveBook }) => {
       <div className="book_details">
         <span className="School-of"> {book.category} </span>
         <h1 className="title"> {book.title} </h1>
-        <h3 className="Suzanne-Collins">Author</h3>
+        <h3 className="Suzanne-Collins">{book.author}</h3>
         <span className="Comments">Comments</span>
-        <span className="Remove">Remove</span>
+        <span className="Remove" onClick={() => handleRemoveBook(book)}>
+          Remove
+        </span>
         <span className="Edit">Edit</span>
       </div>
 
@@ -25,12 +27,7 @@ const Book = ({ book, handleRemoveBook }) => {
         <h5 className="Current-Chapter">Current Chapter</h5>
         <h4 className="Current-Lesson">chapter 17</h4>
 
-        <Button
-          className="Rectangle-2 btn-primary btn-sm"
-          onClick={() => handleRemoveBook(book)}
-        >
-          Update Book
-        </Button>
+        <Button className="Rectangle-2 btn-primary btn-sm">Update Book</Button>
       </div>
     </div>
   )
