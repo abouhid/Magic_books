@@ -16,9 +16,12 @@ const CategoryFilter = ({ handleFilterChange }) => {
   ))
 
   return (
-    <select className="select" onChange={handleFilterChange}>
-      {categoriesOpt}
-    </select>
+    <div className="categoryFilter">
+      <span className="filter-label">Filter by category:</span>{" "}
+      <select className="select" onChange={handleFilterChange}>
+        {categoriesOpt}
+      </select>
+    </div>
   )
 }
 

@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
+    "gatsby-plugin-stylelint",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

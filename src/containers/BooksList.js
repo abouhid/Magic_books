@@ -32,10 +32,10 @@ const BooksList = ({ removeBook, changeFilter }) => {
     })
 
   return (
-    <>
+    <div>
       <CategoryFilter handleFilterChange={handleFilterChange} />
-      <div>{displayBooks}</div>
-    </>
+      <>{displayBooks}</>
+    </div>
   )
 }
 export default connect(state => ({ state }), {
