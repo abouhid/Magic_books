@@ -54,38 +54,37 @@ const BookForm = () => {
   ))
   return (
     <>
-      <div className="container">
-        <div className="row">
-          <h1 className="Title_two">ADD NEW BOOK</h1>
-          <Form onSubmit={handleSubmit(onSubmit)}>
-            <Form.Group>
-              <input
-                type="text"
-                name="bookTitle"
-                placeholder="Book Title"
-                onChange={handleChange}
-                className="input_field"
-                id="bookinput"
-                ref={register({ required: true })}
-              />
-              {errors.bookTitle && <span>This field is required</span>}
-            </Form.Group>
-            <Form.Group>
-              <select
-                name="category"
-                onChange={handleCategory}
-                ref={register}
-                id="category"
-                className="category_field"
-              >
-                {categoriesOpt}
-              </select>
-            </Form.Group>
-            <Button variant="primary" type="submit" className="submit_form">
-              Add Book
-            </Button>
-          </Form>
-        </div>
+      <div className="Line"></div>
+      <div className="cont">
+        <h1 className="Title_two">ADD NEW BOOK</h1>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <Form.Group>
+            <input
+              type="text"
+              name="bookTitle"
+              placeholder="Book Title"
+              onChange={handleChange}
+              className="input_field"
+              id="bookinput"
+              ref={register({ required: true })}
+            />
+            {errors.bookTitle && <span>This field is required</span>}
+          </Form.Group>
+          <Form.Group>
+            <select
+              name="category"
+              onChange={handleCategory}
+              ref={register}
+              id="category"
+              className="category_field"
+            >
+              {categoriesOpt}
+            </select>
+          </Form.Group>
+          <Button variant="primary" type="submit" className="submit_form">
+            Add Book
+          </Button>
+        </Form>
       </div>
     </>
   )

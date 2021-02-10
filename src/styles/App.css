@@ -78,6 +78,7 @@
   align-items: center;
 }
 .btn-row span {
+  cursor: pointer;
   height: 19px;
   border: none;
   background: none;
@@ -146,4 +147,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cont {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }

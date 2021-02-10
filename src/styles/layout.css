@@ -636,7 +636,7 @@ pre tt:after {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 15px auto;
 }
 
 .book_details > span {
@@ -695,6 +695,7 @@ pre tt:after {
   line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
+  margin: 0;
 }
 
 .Suzanne-Collins {
@@ -837,9 +838,9 @@ pre tt:after {
 }
 
 .Line {
-  width: 1200px;
+  width: 80%;
   height: 2px;
-  margin: 40px 1px 29px 0;
+  margin: 20px auto;
   border: solid 1px #e8e8e8;
 }
 
@@ -862,19 +863,17 @@ form {
 }
 
 .input_field {
-  width: 664px;
   height: 45px;
-  margin: 19px 34px 0 0;
-  padding: 13px 571px 13px 17px;
+  width: 430px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
 }
 
 .category_field {
-  width: 285px;
+  width: 200px;
   height: 45px;
-  margin: 19px 34px 0;
+  margin: 0 34px 0;
   padding: 6px 15px 9px 16px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -882,8 +881,8 @@ form {
 }
 
 .submit_form {
-  width: 184px;
+  width: 150px;
   height: 45px;
-  margin: 19px 0 0 34px;
+  margin: 0 0 0 15px;
   border-radius: 3px;
 }

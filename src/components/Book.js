@@ -9,7 +9,7 @@ const Book = ({ book, handleRemoveBook }) => {
         <span className="School-of"> {book.category} </span>
         <h1 className="title"> {book.title} </h1>
         <h3 className="Suzanne-Collins">{book.author}</h3>
-        <div class="btn-row">
+        <div className="btn-row">
           <span className="Comments">Comments</span>|
           <span className="Remove" onClick={() => handleRemoveBook(book)}>
             Remove
